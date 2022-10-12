@@ -14,7 +14,8 @@
   }
   
   .container {
-    width: 80%;
+    width: 90%;
+    height: 90%;
     box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
     border-radius: 20px;
     background-color: white;
@@ -61,23 +62,25 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 100px 0;
+    margin-top: 50px;
+    margin-bottom: 20px;
   }
   
   .column-1 {
     margin-left: 50px;
     position: relative;
+    margin-right: 90px;
   }
   
   h2 {
-    font-size: 54px;
+    font-size: 50px;
   }
   
   h3 {
-    font-size: 30px;
+    font-size: 25px;
     color: #707070;
     font-weight: 100;
-    margin: 20px 0;
+    margin: 10px 0;
   }
   
   .column-1 p {
@@ -93,14 +96,13 @@
     background: linear-gradient(#b7cf16, #fa3527);
     position: absolute;
     left: -40px;
-    top: 8px;
   }
   
   
   h4 {
     font-size: 20px;
     color: #000;
-    margin: 30px 0;
+    margin: 10px 0;
   }
   
   .buy {
@@ -122,8 +124,9 @@
   }
   
   .controller {
-    width: 90%;
+    width: 60%;
     z-index: 2;
+    transform: translateX(70px);
   }
   
   .color-box {
@@ -149,6 +152,7 @@
     height: 100%;
     width: 100%;
     max-width: 55px;
+    transform: translateX(100px);
   }
   
   .social-links {
