@@ -51,7 +51,7 @@
     cursor: pointer;
     text-decoration: none;
     color: #000;
-    font-size: 14px;
+    font-size: 20px;
   }
   
   .nav-link:hover {
@@ -62,7 +62,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 60px;
     margin-bottom: 20px;
   }
   
