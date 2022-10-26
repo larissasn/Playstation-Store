@@ -115,8 +115,23 @@
     cursor: pointer;
     z-index: 2;
     background: linear-gradient(to right, #ddff00, #ff3527);
+    transition: all 0.5s ease-in-out;
+
   }
-  
+  .buy img{
+    width: 30px;
+    display: none;
+  }
+  .buy:hover{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 160px;
+  }
+  .buy:hover img{
+    display: block;
+  }
   .column-2 {
     display: flex;
     align-items: center;
@@ -127,6 +142,8 @@
     width: 60%;
     z-index: 2;
     transform: translateX(70px);
+    animation: moveController 2s infinite alternate ease-in-out;
+
   }
   
   .color-box {
@@ -182,7 +199,7 @@
       border-radius: 0;
       overflow-y: auto;
     }
-  
+   
     .row {
       flex-direction: column-reverse;
     }
@@ -200,6 +217,8 @@
       top: 60px;
       left: 60px;
       overflow: hidden;
+      transition: all 0.8s ease-in-out;
+      cursor: pointer;
     }
   
     .menu-icon {
@@ -210,4 +229,11 @@
       display: block;
       margin-top: 5px;
     }
+  }
+  @keyframes moveController {
+
+    from {
+      transform: translate(-2%, -5%) rotate(-5deg);
+    }
+    
   }
