@@ -14,8 +14,8 @@
   }
   
   .container {
-    width: 90%;
-    height: 90%;
+    width: 80%;
+    height: 100%;
     box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
     border-radius: 20px;
     background-color: white;
@@ -51,7 +51,7 @@
     cursor: pointer;
     text-decoration: none;
     color: #000;
-    font-size: 20px;
+    font-size: 18px;
   }
   
   .nav-link:hover {
@@ -62,14 +62,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 60px;
-    margin-bottom: 20px;
+    margin: 35px 0;
   }
   
   .column-1 {
     margin-left: 50px;
     position: relative;
-    margin-right: 90px;
   }
   
   h2 {
@@ -77,10 +75,10 @@
   }
   
   h3 {
-    font-size: 25px;
+    font-size: 30px;
     color: #707070;
-    font-weight: 100;
-    margin: 10px 0;
+    font-weight: 80;
+    margin: 20px 0;
   }
   
   .column-1 p {
@@ -96,13 +94,14 @@
     background: linear-gradient(#b7cf16, #fa3527);
     position: absolute;
     left: -40px;
+    top: 8px;
   }
   
   
   h4 {
     font-size: 20px;
     color: #000;
-    margin: 10px 0;
+    margin: 40px 0;
   }
   
   .buy {
@@ -139,9 +138,9 @@
   }
   
   .controller {
-    width: 60%;
+    width: 70%;
     z-index: 2;
-    transform: translateX(70px);
+    transform: translateX(30px);
     animation: moveController 2s infinite alternate ease-in-out;
 
   }
@@ -166,16 +165,15 @@
   }
   
   .add-cart img {
-    height: 100%;
-    width: 100%;
-    max-width: 55px;
-    transform: translateX(100px);
+    height: 45px;
+    width: 45px;
   }
   
   .social-links {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 20px;
   }
   
   .social-links img {
@@ -199,7 +197,9 @@
       border-radius: 0;
       overflow-y: auto;
     }
-   
+    .navbar{
+      z-index: 5;
+    }
     .row {
       flex-direction: column-reverse;
     }
@@ -229,7 +229,9 @@
       display: block;
       margin-top: 5px;
     }
+    
   }
+  
   @keyframes moveController {
 
     from {
